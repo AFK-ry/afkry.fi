@@ -1,0 +1,24 @@
+.post {
+    border: 1px solid $dark;
+
+    .post-header {
+        border-bottom: 1px solid $dark;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 6px;
+
+        font-size: 1.25rem;
+
+        .post-title {
+            font-weight: bold;
+        }
+        .post-date {
+            font-weight: lighter;
+        }
+    }
+    .post-content {
+        margin: 0;
+        padding: 6px;
+    }
+}

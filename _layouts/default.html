@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {%- include head.html -%}
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <header>
+      {% include navbar.html %}
+    </header>
+    <main>
+      <div class="content">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

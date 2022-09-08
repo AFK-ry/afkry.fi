@@ -1,1 +1,15 @@
-theme: jekyll-theme-minimal
+---
+name: Akateeminen FrisbeeKerho ry
+description: Oululaisissa korkeakouluissa opiskelevien frisbeeharrastajien seura
+title: Akateeminen FrisbeeKerho
+url: https://afkry.fi/
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
+collections:
+  posts:
+    permalink: "/uutiset/:year/:month/:day/:title"
+    output: true
+exclude:
+  - readme.md
