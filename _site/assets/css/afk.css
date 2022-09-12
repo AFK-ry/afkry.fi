@@ -1,31 +1,45 @@
 /* AFK Main style */
+/* Dimensions */
+/* Mobile Dimensions */
 html { height: 100%; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; }
 
 body { color: #040404; min-height: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; }
 body main { flex-grow: 1; }
 
-main { padding: 0; background-color: #ddd; display: flex; flex-direction: column; align-items: center; }
-main > .content { width: 75%; box-sizing: border-box; flex-grow: 1; display: flex; flex-direction: column; min-height: 100%; background-color: #fdfdfd; padding: .5rem 1rem; }
+main { z-index: 5; padding: 0; background-color: #ddd; display: flex; flex-direction: column; align-items: center; }
+main > .content { width: 75%; box-sizing: border-box; flex-grow: 1; display: flex; flex-direction: column; min-height: 100%; background-color: #fdfdfd; padding: .5rem 1rem; box-shadow: 0 0 3px #999; }
 
-footer { background-color: #3d3; }
+header { background-color: #d55; box-shadow: 0px 0px 3px #999; z-index: 10; }
+
+footer { z-index: 10; box-shadow: 0px -2px 2px #ddd; background-color: #444; color: #999; padding: 5px 12px; }
 
 a { color: #22c; text-decoration: none; }
 a:hover { color: #191; }
 
 @media only screen and (max-width: 768px) { main > .content { width: 95%; } }
-.navbar { height: 69px; padding: 0 2em; background-color: #d55; margin: auto 0; list-style-type: none; display: flex; flex-direction: row; align-items: center; gap: 15px; }
-.navbar .nav-item { display: block; position: relative; border: 1px solid transparent; border-radius: 4px; font-size: 1.75rem; line-height: 2rem; padding: 3px 6px; font-weight: bold; text-shadow: 1px 1px 2px #444; transition: text-shadow 0.1s ease-out; /* hover underline thingy
+.navbar { width: 75%; margin: auto; display: flex; flex-direction: row; }
+.navbar svg#logo { width: auto; height: 80px; margin-left: -80px; }
+.navbar svg#logo #discin { fill: #3d3; }
+.navbar svg#logo:hover #discin { fill: #66d; }
+.navbar .nav { margin: 0; padding: 2px 0; list-style-type: none; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
+.navbar .nav .nav-item { display: block; position: relative; border: 1px solid transparent; border-top-left-radius: 16px; border-bottom-right-radius: 16px; font-size: 1.75rem; line-height: 2rem; padding: 6px 8px 2px; font-weight: bold; text-shadow: 1px 1px 2px #444; transition: box-shadow 0.2s ease-out; box-sizing: border-box; /* hover underline thingy
 &:after { content: ''; position: absolute; width: calc(100% - 8px); transform: scaleX(0); opacity: 50%; height: 2px; bottom: -2px; left: 4px; background-color: $dark-red; transform-origin: bottom right; transition: transform 0.25s ease-out;
 }
 &:hover:after { transform: scaleX(1); transform-origin: bottom left;
 }
 */ }
-.navbar .nav-item a { color: #fdfdfd; }
-.navbar .nav-item:hover { text-shadow: 2px 2px 4px #444; }
-.navbar .nav-item.current { background-color: #22c; text-shadow: 1px 1px 2px #999; box-shadow: 1px 1px 3px #444; transition: box-shadow 0.1s ease-out; }
-.navbar .nav-item.current:hover { box-shadow: 2px 2px 5px #444; }
-.navbar .nav-item.current:hover:after { display: none; }
+.navbar .nav .nav-item a { color: #fdfdfd; }
+.navbar .nav .nav-item:hover { box-shadow: 2px 2px 3px #444; }
+.navbar .nav .nav-item.current { box-shadow: 2px 2px 2px #444; }
+.navbar .nav .nav-item.current:hover { box-shadow: 2px 2px 3px #444; }
+.navbar .nav.secondary { padding: 2px 0; }
+.navbar .nav.secondary .nav-item { font-size: 1.25rem; line-height: 1.5rem; font-weight: bold; border-top-left-radius: 12px; border-bottom-right-radius: 12px; border: none; text-shadow: 0.5px 0.5px 1px #444; }
+.navbar .nav.secondary .nav-item:hover { box-shadow: 1px 1px 2px #444; }
+.navbar .nav.secondary .nav-item.current { box-shadow: 1px 1px 1px #444; }
+.navbar .nav.secondary .nav-item.current:hover { box-shadow: 1px 1px 2px #444; }
 
+@media only screen and (max-width: 768px) { .navbar { width: 95%; }
+  .navbar svg#logo { margin-left: 0; } }
 .post { border: 1px solid #22c; }
 .post .post-header { border-bottom: 1px solid #22c; display: flex; flex-direction: row; justify-content: space-between; padding: 6px; font-size: 1.25rem; }
 .post .post-header .post-title { font-weight: bold; }

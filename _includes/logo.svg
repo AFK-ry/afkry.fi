@@ -1,34 +1,4 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/afk.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Uutiset | Akateeminen FrisbeeKerho</title>
-<meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Uutiset" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Oululaisissa korkeakouluissa opiskelevien frisbeeharrastajien seura" />
-<meta property="og:description" content="Oululaisissa korkeakouluissa opiskelevien frisbeeharrastajien seura" />
-<link rel="canonical" href="http://localhost:4000/uutiset/" />
-<meta property="og:url" content="http://localhost:4000/uutiset/" />
-<meta property="og:site_name" content="Akateeminen FrisbeeKerho" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Uutiset" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Oululaisissa korkeakouluissa opiskelevien frisbeeharrastajien seura","headline":"Uutiset","url":"http://localhost:4000/uutiset/"}</script>
-<!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Akateeminen FrisbeeKerho" /></head><head>
-    <meta charset="utf-8">
-    <title>Uutiset</title>
-  </head>
-  <body>
-    <header>
-      
-<nav class="navbar">
-<div class="brand">
-    <a href="/"><svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
     x="0px" y="0px" width="961.451px" height="958.453px" viewBox="0 0 961.451 958.453"
     enable-background="new 0 0 961.451 958.453" xml:space="preserve">
 <g id="Layer_1_1_">
@@ -45,45 +15,4 @@
 <g id="shadow">
 	<path opacity="0.5" d="M763.358,448.987c7.854,49.673-111.329,109.788-266.194,134.274   c-154.866,24.485-286.775,4.07-294.618-45.594c-0.831-5.265,0.082-23.723,1.108-35.365c0.039,1.208,0.148,2.416,0.337,3.611   c7.629,48.25,136.532,67.966,287.911,44.03c151.389-23.946,267.927-82.47,260.297-130.72c-0.124-0.781-0.276-1.557-0.467-2.316   C756.643,428.321,762.59,444.127,763.358,448.987z"/>
 </g>
-</svg></a>
-</div>
-<div>
-<ul class="nav primary">
-    <li class="nav-item">
-    <a class="nav-link" href="/">AFK ry</a></li><li class="nav-item">
-    <a class="nav-link" href="/frisbeer/">Frisbeer</a></li><li class="nav-item">
-    <a class="nav-link" href="/frisbeegolf/">Frisbeegolf</a></li>
-</ul>
-
-</div>
-</nav>
-    </header>
-    <main>
-      <div class="content">
-        <h1>Uutiset</h1>
-        
-<div class="post">
-    <div class="post-header">
-        
-        <div class="post-title">TestiPosti</div>
-        
-        <div class="post-date">
-            <a href="/uutiset/2022/07/22/first">2022-07-22</a>
-        </div>
-    </div>
-    <div class="post-content"><p>Moikka! Tässä on tekstiä.</p>
-
-<p>Täällä voi olla enemmänkin tekstiä. Kiva!</p>
-</div>
-</div>
-
-
-      </div>
-    </main>
-    <footer>
-      <div class="footer">
-    &copy; Akateeminen FrisbeeKerho ry
-</div>
-    </footer>
-  </body>
-</html>
+</svg>

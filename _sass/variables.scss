@@ -2,6 +2,7 @@ $blue: #66d;
 $dark-blue: #22c;
 $red: #d55;
 $dark-red: #922;
+$light-red: #f88;
 $green: #3d3;
 $dark-green: #191;
 $white: #fdfdfd;
@@ -9,10 +10,14 @@ $light-grey: #ddd;
 $grey: #999;
 $dark-grey: #444;
 $black: #040404;
-
 $gold: rgb(207, 187, 0);
 
-$primary-color: $blue;
-$secondary-color: $red;
-
 $dark: $dark-blue;
+
+/* Dimensions */
+$content-width: 75%;
+
+/* Mobile Dimensions */
+$mobile-cutoff: 768px;
+
+$content-width-mobile: 95%;

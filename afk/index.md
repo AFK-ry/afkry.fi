@@ -1,5 +1,6 @@
 ---
 title: Akateeminen FrisbeeKerho
+permalink: /
 layout: default
 ---
 Hei, ja tervetuloa Akateeminen FrisbeeKerho ry:n kotisivuille!

@@ -1,0 +1,7 @@
+<ul class="nav secondary">
+{%- for subitem in item.items %}
+    <li class="nav-item {% if page.url == subitem.link %}current{% endif %}">
+        <a class="nav-link" href="{{ subitem.link }}">{{ subitem.title }}</a>
+    </li>
+{%- endfor %}
+</ul>

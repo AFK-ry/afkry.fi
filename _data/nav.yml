@@ -1,6 +1,18 @@
-- title: AFK
+- title: AFK ry
   link: /
+  items:
+    - title: Hallitus
+      link: /hallitus/
+    - title: Yhteystiedot
+      link: /yhteys/
+    - title: Historia
+      link: /historia/
 - title: Frisbeer
   link: /frisbeer/
+  items:
+    - title: Joukkueliiga
+      link: /frisbeer/joukkueliiga/
+    - title: ELO Rating
+      link: /frisbeer/elo/
 - title: Frisbeegolf
   link: /frisbeegolf/
