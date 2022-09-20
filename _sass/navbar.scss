@@ -1,110 +1,119 @@
 .navbar {
-    width: $content-width;
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 
-    svg#logo {
-        width: auto;
-        height: 80px;
-        margin-left: -80px;
-        #discin {
-            fill: $green;
-        }
-        &:hover {
+    .brand {
+        width: $gutter-width;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+        svg#logo {
+            margin: 10px auto;
+            width: auto;
+            height: 80px;
             #discin {
-                fill: $blue;
+                fill: $dark-green;
+            }
+            &:hover {
+                #discin {
+                    fill: $blue;
+                }
             }
         }
     }
 
     .nav {
-        margin: 0;
-        padding: 2px 0;
-        list-style-type: none;
+        width: $content-width;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
 
-        .nav-item {
-            display: block;
-            position: relative;
-            border: 1px solid transparent;
-            border-top-left-radius: 16px;
-            border-bottom-right-radius: 16px;
-            font-size: 1.75rem;
-            line-height: 2rem;
-            padding: 6px 8px 2px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px $dark-grey;
-            transition: box-shadow 0.2s ease-out;
-            box-sizing: border-box;
-            a {
-                color: $white;
-            }
-            &:hover {
-                box-shadow: 2px 2px 3px $dark-grey;
-            }
-            &.current {
-                box-shadow: 2px 2px 2px $dark-grey;
-                &:hover {
-                    box-shadow: 2px 2px 3px $dark-grey;
-                }
-            }
-
-
-            /* hover underline thingy
-            &:after {
-                content: '';
-                position: absolute;
-                width: calc(100% - 8px);
-                transform: scaleX(0);
-                opacity: 50%;
-                height: 2px;
-                bottom: -2px;
-                left: 4px;
-                background-color: $dark-red;
-                transform-origin: bottom right;
-                transition: transform 0.25s ease-out;
-            }
-            &:hover:after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
-            }
-            */
+        .divider {
+            background-color: $dark-grey;
+            flex-basis: 1px;
+            margin-left: -12px;
+            margin-right: -1000px;
         }
 
-        &.secondary {
-            padding: 2px 0;
+        .nav-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
             .nav-item {
-                font-size: 1.25rem;
-                line-height: 1.5rem;
+                display: block;
+                position: relative;
+                white-space: nowrap;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                padding: 6px 8px 2px;
                 font-weight: bold;
-                border-top-left-radius: 12px;
-                border-bottom-right-radius: 12px;
-                border: none;
-                text-shadow: 0.5px 0.5px 1px $dark-grey;
-                &:hover {
-                    box-shadow: 1px 1px 2px $dark-grey;
+                text-shadow: 1px 1px 2px $dark-grey;
+                transition: border 0.2s ease-out;
+                box-sizing: border-box;
+                margin: -1px 0 -1px -1px;
+                border: 1px solid transparent;
+                a {
+                    color: $white;
                 }
-                &.current {
-                    box-shadow: 1px 1px 1px $dark-grey;
-                    &:hover {
-                        box-shadow: 1px 1px 2px $dark-grey;
-                    }
+                &.current, &:hover {
+                    border: 1px solid $dark-grey;
+                }
+            }
+            
+            &.secondary {
+                .nav-item {
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    font-weight: bold;
+                    text-shadow: 0.5px 0.5px 1px $dark-grey;
                 }
             }
         }
     }
 }
-
-@media only screen and (max-width: $mobile-cutoff) {
+    
+    @media only screen and (max-width: $mobile-cutoff) {
     .navbar {
+        margin: auto;
         width: $content-width-mobile;
-        svg#logo {
-            margin-left: 0;
+        position: relative;
+        .brand {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .nav {
+            flex-direction: row;
+
+            .divider {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .nav-list {
+                flex-direction: column;
+                &.primary {
+                    align-items: flex-end;
+                    .nav-item {
+                        margin: -1px -1px 0 0;
+                    }
+                }
+                &.secondary {
+                    align-items: flex-start;
+                    .nav-item {
+                        margin: -1px 0 0 -1px;
+                    }
+                }
+            }
         }
     }
 }

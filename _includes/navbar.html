@@ -1,26 +1,26 @@
-
-<nav class="navbar">
-<div class="brand">
-    <a href="/">{% include logo.svg %}</a>
+<div class="navbar">
+    <div class="brand">
+        <a href="/">{% include logo.svg %}</a>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list primary">
+            {% for item in site.data.nav -%}
+            <li class="nav-item
+            {%- if item.link == '/' and page.url == '/' or page.parent == '/' %} current root
+            {%- elsif item.link != '/' and page.url contains item.link %} current
+            {%- endif -%}">
+            <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a></li>
+            {%- endfor %}
+        </ul>
+        <div class="divider"></div>
+        {% for item in site.data.nav -%}
+        {% if item.items -%}
+        {% if item.link == '/' and page.url == '/' or page.parent == '/' -%}
+        {% include subnav.html %}
+        {%- elsif item.link != '/' and page.url contains item.link  -%}
+        {% include subnav.html %}
+        {%- endif %}
+        {%- endif %}
+        {%- endfor %}
+    </nav>
 </div>
-<div>
-<ul class="nav primary">
-    {% for item in site.data.nav -%}
-    <li class="nav-item
-    {%- if item.link == '/' and page.url == '/' or page.parent == '/' %} current root
-    {%- elsif item.link != '/' and page.url contains item.link %} current
-    {%- endif -%}">
-    <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a></li>
-    {%- endfor %}
-</ul>
-{% for item in site.data.nav -%}
-{% if item.items -%}
-{% if item.link == '/' and page.url == '/' or page.parent == '/' -%}
-    {% include subnav.html %}
-{%- elsif item.link != '/' and page.url contains item.link  -%}
-    {% include subnav.html %}
-{%- endif %}
-{%- endif %}
-{%- endfor %}
-</div>
-</nav>

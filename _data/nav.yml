@@ -12,7 +12,7 @@
   items:
     - title: Joukkueliiga
       link: /frisbeer/joukkueliiga/
-    - title: ELO Rating
-      link: /frisbeer/elo/
+    - title: Tilastot
+      link: /frisbeer/tilastot
 - title: Frisbeegolf
   link: /frisbeegolf/
