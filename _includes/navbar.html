@@ -1,6 +1,6 @@
 <div class="navbar">
     <div class="brand">
-        <a href="/">{% include logo.svg %}</a>
+        <a href="{{ '/' | relative_url }}">{% include logo.svg %}</a>
     </div>
     <nav class="nav">
         <ul class="nav-list primary">
@@ -9,7 +9,7 @@
             {%- if item.link == '/' and page.url == '/' or page.parent == '/' %} current root
             {%- elsif item.link != '/' and page.url contains item.link %} current
             {%- endif -%}">
-            <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a></li>
+            <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.title }}</a></li>
             {%- endfor %}
         </ul>
         <div class="divider"></div>
