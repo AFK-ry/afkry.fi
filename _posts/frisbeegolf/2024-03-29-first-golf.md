@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "TestiPosti"
+categories: golf
 ---
-Moikka! Tässä on tekstiä.
+Golf uutinen tässä
 
 Täällä voi olla enemmänkin tekstiä. Kiva!
